@@ -31,7 +31,7 @@ export default function BlogPostCard({
 
   return (
     <ErrorBoundary fallback={<div>Error loading blog post card</div>}>
-      <div className="flex flex-col w-full gap-10">
+      <div className="flex flex-col items-center justify-center lg:items-start w-full gap-10">
         <p className={`${isFirst ? "text-4xl font-bold" : "hidden"}`}>
           Recently Posts:
         </p>
@@ -39,18 +39,18 @@ export default function BlogPostCard({
           Other Posts:
         </p>
         <Card
-          className={`flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 ${isFirst ? "w-full" : "min-w-[440px]"}`}
+          className={`flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 ${isFirst ? "w-full lg:max-w-screen 2xl:max-w-screen-2xl" : "w-full lg:max-w-[640px]"}`}
         >
-          <CardHeader className="p-0">
+          <CardHeader className="">
             <div
-              className={`relative ${isFirst ? "min-h-[600px]" : "min-h-[360px]"} w-full`}
+              className={`relative ${isFirst ? "size-[200px] lg:min-h-[430px]" : "size-[200px] lg:min-h-[360px]"} w-full`}
             >
               <Image
                 src={imageUrl || "/placeholder.svg"}
                 alt={post.title}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover transition-transform duration-300 ease-in-out hover:scale-105 "
+                className="object-fill rounded transition-transform duration-300 ease-in-out hover:scale-105 "
               />
             </div>
           </CardHeader>

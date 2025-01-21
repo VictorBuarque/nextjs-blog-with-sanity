@@ -26,10 +26,10 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+      <div className="w-full 2xl:max-w-7xl mx-auto px-4 md:px-6 lg:px-0 py-12">
+        <div className="grid grid-cols-1 2xl:grid-cols-2 gap-10">
           {blogPosts.map((post, index) => (
-            <div key={post._id} className={index === 0 ? "md:col-span-2 lg:col-span-3" : ""}>
+            <div key={post._id} className={index === 0 ? " lg:col-span-2" : ""}>
               <BlogPostCard post={post} isFirst={index === 0} />
             </div>
           ))}
