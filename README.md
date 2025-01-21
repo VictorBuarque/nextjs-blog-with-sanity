@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Victor Buarque's Blog
+
+## Overview
+
+This project is a modern, responsive blog built with Next.js 15 and Sanity CMS. It features a clean design, dynamic content management, and optimized performance. The blog showcases articles with rich content, author information, and an intuitive user interface.
+
+## Features
+
+- **Dynamic Content**: Powered by Sanity CMS for easy content management
+- **Responsive Design**: Looks great on desktop, tablet, and mobile devices
+- **SEO Optimized**: Built-in SEO best practices for better search engine visibility
+- **Fast Performance**: Utilizes Next.js 15's latest features for optimal loading speeds
+- **Rich Text Editor**: Supports rich text formatting for blog posts
+- **Image Optimization**: Automatic image optimization and responsive images
+- **Author Profiles**: Dedicated author pages and author information on posts
+- **Custom Components**: Includes custom-built Header, Footer, and Card components
+- **Social Sharing**: Easy social media sharing for blog posts
+- **Error Handling**: Custom 404 pages for both general site and blog posts
+- **Typescript Support**: Strongly typed for better development experience and fewer bugs
+
+## Tech Stack
+
+- **Frontend**: Next.js 15, React 18
+- **Styling**: Tailwind CSS, shadcn/ui
+- **CMS**: Sanity.io
+- **Language**: TypeScript
+- **Deployment**: Vercel
+
+## Project Structure
+
+- `app/`: Next.js app directory containing pages and layouts
+- `components/`: Reusable React components
+  - `card/`: Blog post card component
+  - `post-detail/`: Individual blog post detail component
+  - `ui/`: UI components from shadcn/ui
+- `lib/`: Utility functions and Sanity client configuration
+- `public/`: Static assets
+- `schemas/`: Sanity schema definitions
+- `types/`: TypeScript type definitions
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v18 or later)
+- npm or pnpm
+- Sanity CLI (`npm install -g @sanity/cli`)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+2. Install the repository: ```npm install or pnpm install```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
